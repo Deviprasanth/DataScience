@@ -1,0 +1,9 @@
+Basics of Python
+
+Regex
+
+Scipy and Pandas
+
+Data Visualization
+
+Machinelearning and Scikit learn
