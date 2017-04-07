@@ -1,0 +1,10 @@
+/*
+Theme Name: Import.io WordPress Theme
+Theme URI: http://www.import.io
+Description: WordPress theme based on Bootstrap, written exclusively for Import.io
+Author: Ambition Creative
+Author URI: http://www.ambitioncreative.co.uk
+Version: 1.0
+*/
+@import url("assets/css/import.bootstrap.min.css");
+@import url("assets/css/theme.min.css?v=20170329");

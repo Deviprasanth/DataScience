@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://www.kdnuggets.com/2016/08/10-algorithms-machine-learning-engineers.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>  The 10 Algorithms Machine Learning Engineers Need to Know</title>
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="dns-prefetch" href="./The 10 Algorithms Machine Learning Engineers Need to Know_files/style.css">
+<link rel="dns-prefetch" href="./The 10 Algorithms Machine Learning Engineers Need to Know_files/jquery-1.9.1.min.js.download">
+<link rel="dns-prefetch" href="http://www.kdnuggets.com/aps/all17.js">
+<link rel="shortcut icon" href="http://www.kdnuggets.com/wp-content/themes/kdn17/images/favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="KDnuggets: Analytics, Big Data, Data Mining and Data Science Feed" href="http://www.kdnuggets.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="KDnuggets » Feed" href="http://www.kdnuggets.com/feed">
+<link rel="alternate" type="application/rss+xml" title="KDnuggets » Comments Feed" href="http://www.kdnuggets.com/comments/feed">
+<link rel="https://api.w.org/" href="http://www.kdnuggets.com/wp-json/">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.kdnuggets.com/wp-includes/wlwmanifest.xml">
+<link rel="prev" title="Approaching (Almost) Any Machine Learning Problem" href="http://www.kdnuggets.com/2016/08/approaching-almost-any-machine-learning-problem.html">
+<link rel="next" title="Top Machine Learning Projects for Julia" href="http://www.kdnuggets.com/2016/08/top-machine-learning-projects-julia.html">
+<link rel="shortlink" href="http://www.kdnuggets.com/?p=54052">
+<link rel="canonical" href="http://www.kdnuggets.com/2016/08/10-algorithms-machine-learning-engineers.html">
+<link type="text/css" rel="stylesheet" href="./The 10 Algorithms Machine Learning Engineers Need to Know_files/style.css" media="screen">
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/jquery-1.9.1.min.js.download"></script>
+<script type="text/javascript" src="http://www.kdnuggets.com/aps/all17.js"></script>
+<script type="text/javascript">//<![CDATA[
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-361129-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//]]></script>
+<style type="text/css">
+:root #header + #content > #left > #rlblock_left,
+:root #ad_wrapper,
+:root #content > #center > .dose > .dosesingle,
+:root #content > #right > .dose > .dosesingle
+{ display: none !important; }
+:root *[hufq83j][hidden] { display: none !important; }</style></head>
+ 
+<body class="post-template-default single single-post postid-54052 single-format-standard">
+  <div class="main_wrapper"><!-- publ: 18-Aug, 2016  -->
+    <div id="wrapper">
+      <div id="header">
+        <div id="header_log">
+          <div class="logo">
+            <a href="http://www.kdnuggets.com/"></a>
+           </div>
+           <h1>KDnuggets</h1>
+           <div class="text-container">
+            &nbsp;&nbsp;Subscribe to <a href="http://www.kdnuggets.com/news/subscribe.html" target="_blank"><b>KDnuggets News</b></a> &nbsp;|
+ <a href="http://twitter.com/kdnuggets"><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/tw_c48.png" width="48" height="48" style="vertical-align: bottom" alt="Twitter"></a> &nbsp;&nbsp;
+ <a href="http://facebook.com/kdnuggets" target="_blank"><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/fb_c48.png" width="48" height="48" style="vertical-align: bottom" alt="Facebook"></a> &nbsp;&nbsp;
+<a href="http://www.linkedin.com/groups/KDnuggets-Analytics-Data-Mining-54257" target="_blank"><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/in_c48.png" width="48" height="48" style="vertical-align: bottom" alt="LinkedIn"></a> 
+&nbsp;|&nbsp; <a href="http://www.kdnuggets.com/gps.html"><b>Contact</b></a>
+            </div>
+          </div>
+        <div class="search">
+          <form method="get" id="searchform" action="http://www.kdnuggets.com/">
+	  <input value="" name="s" id="s" placeholder="search KDnuggets" type="text">
+	  <input value="Search" type="submit"></form>
+        </div>
+<div href="#" id="pull">
+  <img class="menu" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/menu-30.png">
+  <div class="logo">
+      <a href="http://www.kdnuggets.com/"></a>
+  </div>
+  <img class="search-icon" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/search-icon.png">
+</div>
+<div id="pull-menu">
+  
+        <div class="navigation"><ul id="menu-menu" class="menu"><li id="menu-item-1070" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1070"><a title="Data Science Software" href="http://www.kdnuggets.com/software/index.html">SOFTWARE</a></li>
+<li id="menu-item-13756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13756"><a title="News" href="http://www.kdnuggets.com/news/index.html">NEWS</a></li>
+<li id="menu-item-46286" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46286"><a href="http://www.kdnuggets.com/news/top-stories.html">Top stories</a></li>
+<li id="menu-item-42152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42152"><a title="Opinions" href="http://www.kdnuggets.com/opinions/index.html">Opinions</a></li>
+<li id="menu-item-46415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46415"><a href="http://www.kdnuggets.com/tutorials/index.html">Tutorials</a></li>
+<li id="menu-item-13364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13364"><a title="Jobs in Analytics, Data Science" href="http://www.kdnuggets.com/jobs/index.html">JOBS</a></li>
+<li id="menu-item-63505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63505"><a href="http://www.kdnuggets.com/companies/index.html">Companies</a></li>
+<li id="menu-item-13366" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13366"><a href="http://www.kdnuggets.com/courses/index.html">Courses</a></li>
+<li id="menu-item-1499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499"><a href="http://www.kdnuggets.com/datasets/index.html">Datasets</a></li>
+<li id="menu-item-14286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14286"><a title="Education in Analytics, Big Data, Data Science" href="http://www.kdnuggets.com/education/index.html">EDUCATION</a></li>
+<li id="menu-item-51558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51558"><a title="Certificates in Analytics, Big Data, Data Science" href="http://www.kdnuggets.com/education/analytics-data-mining-certificates.html">Certificates</a></li>
+<li id="menu-item-14752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14752"><a href="http://www.kdnuggets.com/meetings/index.html">Meetings</a></li>
+<li id="menu-item-13721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13721"><a title="Webcasts and Webinars" href="http://www.kdnuggets.com/webcasts/index.html">Webinars</a></li>
+</ul></div></div>
+      </div> <!--#header end-->
+      <div id="spacer">
+         &nbsp;
+      </div>
+      <div id="content_wrapper">
+        <div id="ad_wrapper" hufq83j="" hidden="">
+          <script type="text/javascript">
+	jQuery(function() {
+   	    var pull        = $('#pull');
+            menu        = $('#header .navigation ul');
+            menuImage = $('#header img.menu');
+            mobileMenu        = $('#pull-menu-mobile');
+            search = $('img.search-icon');
+            searchBar = $('div.search');
+            searchClick = false;
+            search.on('click', function() {
+                  searchBar.slideToggle();
+                  searchClick = true;
+            });  
+     	    $(menuImage).on('click', function(e) {
+	        //e.preventDefault();
+                if (!searchClick) {
+                  menu.slideToggle();
+                }
+                searchClick = false;
+	    });
+           /* pullMobile.on('click', function(e) {
+              e.preventDefault();
+                if (!searchClick) {
+                  mobileMenu.slideToggle();
+                }
+                searchClick = false;
+	    });*/
+            
+	});
+	kpath = 'http://www.kdnuggets.com/'; aw9(); e17_init(); kse_ads=3;
+	</script>
+        </div>    <div class="breadcumb">
+       <br>
+<a href="http://www.kdnuggets.com/">KDnuggets Home</a> » <a href="http://www.kdnuggets.com/news/index.html">News</a> » <a href="http://www.kdnuggets.com/2016/index.html">2016</a> » <a href="http://www.kdnuggets.com/2016/08/index.html">Aug</a> » <a href="http://www.kdnuggets.com/2016/08/tutorials.html">Tutorials, Overviews</a> » The 10 Algorithms Machine Learning Engineers Need to Know (&nbsp;<a href="http://www.kdnuggets.com/2016/n31.html">16:n31</a>&nbsp;)    </div>
+
+<div id="content" class="single">
+<div id="post-header">
+  <h1 id="title"><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/top-kdnuggets-blog-2016-gold.png" width="120" alt="2016 Gold Blog" align="right">The 10 Algorithms Machine Learning Engineers Need to Know</h1>
+
+  <div class="pagi">
+    <div class="pagi-left">
+<a href="http://www.kdnuggets.com/2016/08/approaching-almost-any-machine-learning-problem.html" rel="prev"><img width="8" height="10" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/prv.gif"> <strong>Previous post</strong></a></div>
+<div class="pagi-right">
+<a href="http://www.kdnuggets.com/2016/08/top-machine-learning-projects-julia.html" rel="next"><strong>Next post</strong> <img width="8" height="10" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/nxt.gif"></a></div>
+
+    <br>&nbsp;<br>&nbsp;
+    <div class="addthis_native_toolbox"></div>
+
+  </div>
+  <div class="tag-data">Tags: <a href="http://www.kdnuggets.com/tag/algorithms" rel="tag">Algorithms</a>, <a href="http://www.kdnuggets.com/tag/machine-learning" rel="tag">Machine Learning</a>, <a href="http://www.kdnuggets.com/tag/supervised-learning" rel="tag">Supervised Learning</a>, <a href="http://www.kdnuggets.com/tag/unsupervised-learning" rel="tag">Unsupervised Learning</a></div>
+  <br>
+  <p class="excerpt">
+     Read this introductory list of contemporary machine learning algorithms of importance that every engineer should understand.
+  </p>
+</div>  
+<div id="post-header-ad">
+<script type="text/javascript">e17_write(1); kse_ads=2;</script>
+</div>
+  <hr class="grey-line"><br>
+  <div id="post-" class="post-54052 post type-post status-publish format-standard hentry category-f08-tutorials tag-algorithms tag-machine-learning tag-supervised-learning tag-unsupervised-learning">
+     
+
+<p><b>By James Le, New Story Charity</b>.</p>
+<p><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/blackboard-header.jpg" alt="Blackboard header" width="100%"></p>
+<p>It is no doubt that the sub-field of machine learning / artificial intelligence has increasingly gained more popularity in the past couple of years. As Big Data is the hottest trend in the tech industry at the moment, machine learning is incredibly powerful to make predictions or calculated suggestions based on large amounts of data. Some of the most common examples of machine learning are Netflix’s algorithms to make movie suggestions based on movies you have watched in the past or Amazon’s algorithms that recommend books based on books you have bought before.</p>
+<p>So if you want to learn more about machine learning, how do you start? For me, my first introduction is when I took an Artificial Intelligence class when I was studying abroad in Copenhagen. My lecturer is a full-time Applied Math and CS professor at the Technical University of Denmark, in which his research areas are logic and artificial, focusing primarily on the use of logic to model human-like planning, reasoning and problem solving. The class was a mix of discussion of theory/core concepts and hands-on problem solving. The textbook that we used is one of the AI classics:&nbsp;<a href="https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597" target="_blank" data-href="https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597">Peter Norvig’s <em>Artificial Intelligence — A Modern Approach</em></a>, in which we covered major topics including intelligent agents, problem-solving by searching, adversarial search, probability theory, multi-agent systems, social AI, philosophy/ethics/future of AI. At the end of the class, in a team of 3, we implemented simple search-based agents solving transportation tasks in a virtual environment as a programming project.</p>
+<p>I have learned a tremendous amount of knowledge thanks to that class, and decided to keep learning about this specialized topic. In the last few weeks, I have been multiple tech talks in San Francisco on deep learning, neural networks, data architecture — and a Machine Learning conference with a lot of well-known professionals in the field. Most importantly, I enrolled inUdacity’s&nbsp;<a href="https://www.udacity.com/course/intro-to-machine-learning--ud120" target="_blank" data-href="https://www.udacity.com/course/intro-to-machine-learning--ud120"><em>Intro to Machine Learning</em></a><em>&nbsp;</em>online course in the beginning of June and has just finished it a few days ago. In this post, I want to share some of the most common machine learning algorithms that I learned from the course.</p>
+<p>Machine learning algorithms can be divided into 3 broad categories — supervised learning, unsupervised learning, and reinforcement learning.Supervised learning&nbsp;is useful in cases where a property (<em>label</em>) is available for a certain dataset (<em>training set</em>), but is missing and needs to be predicted for other instances.&nbsp;Unsupervised learning&nbsp;is useful in cases where the challenge is to discover implicit relationships in a given&nbsp;<em>unlabeled&nbsp;</em>dataset (items are not pre-assigned).&nbsp;Reinforcement learning&nbsp;falls between these 2 extremes — there is some form of feedback available for each predictive step or action, but no precise label or error message. Since this is an intro class, I didn’t learn about reinforcement learning, but I hope that 10 algorithms on supervised and unsupervised learning will be enough to keep you interested.</p>
+<h3>Supervised Learning</h3>
+<p>&nbsp;<br>
+<strong>1.&nbsp;Decision Trees</strong>:&nbsp;A decision tree is a decision support tool that uses a tree-like graph or model of decisions and their possible consequences, including chance-event outcomes, resource costs, and utility. Take a look at the image to get a sense of how it looks like.</p>
+<p><img alt="" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/1-dUIGB4eoqXG4MdKsykvFKg.gif" width="99%"><br>
+</p><center><em>Decision Tree</em></center><p></p>
+<p>From a business decision point of view, a decision tree is the minimum number of yes/no questions that one has to ask, to assess the probability of making a correct decision, most of the time. As a method, it allows you to approach the problem in a structured and systematic way to arrive at a logical conclusion.</p>
+<p><strong>2.&nbsp;Naïve Bayes Classification</strong>:&nbsp;Naïve Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes’ theorem with strong (naïve) independence assumptions between the features. The featured image is the equation — with P(A|B) is posterior probability, P(B|A) is likelihood, P(A) is class prior probability, and P(B) is predictor prior probability.</p>
+<p><img alt="" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/1-IBFIDn5MR6e9Yk1qslVoGA.jpeg" width="99%"><br>
+</p><center><em>Naive Bayes Classification</em></center><p></p>
+<p>Some of real world examples are:</p>
+<ul>
+<li>To mark an email as spam or not spam
+</li><li>Classify a news article about technology, politics, or sports
+</li><li>Check a piece of text expressing positive emotions, or negative emotions?
+</li><li>Used for face recognition software.
+</li></ul>
+<p><strong>3.&nbsp;Ordinary Least Squares Regression</strong>:&nbsp;If you know statistics, you probably have heard of linear regression before. Least squares is a method for performing linear regression. You can think of linear regression as the task of fitting a straight line through a set of points. There are multiple possible strategies to do this, and “ordinary least squares” strategy go like this — You can draw a line, and then for each of the data points, measure the vertical distance between the point and the line, and add these up; the fitted line would be the one where this sum of distances is as small as possible.</p>
+<p><img alt="" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/1-Sy_6ipmBh_21KD0_dds1HQ.png" width="99%"><br>
+</p><center><em>Ordinary Least Squares Regression</em></center><p></p>
+<p>Linear refers the kind of model you are using to fit the data, while least squares refers to the kind of error metric you are minimizing over.</p>
+<p><strong>4.&nbsp;Logistic Regression</strong>:&nbsp;Logistic regression is a powerful statistical way of modeling a binomial outcome with one or more explanatory variables. It measures the relationship between the categorical dependent variable and one or more independent variables by estimating probabilities using a logistic function, which is the cumulative logistic distribution.</p>
+<p><img alt="" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/1-nsphNzg5aAtTWbI4jwKItw.png" width="99%"><br>
+</p><center><em>Logistic Regression</em></center><p></p>
+<p>In general, regressions can be used in real-world applications such as:</p>
+<ul>
+<li>Credit Scoring
+</li><li>Measuring the success rates of marketing campaigns
+</li><li>Predicting the revenues of a certain product
+</li><li>Is there going to be an earthquake on a particular day?
+</li></ul>
+<p><strong>5.&nbsp;Support Vector Machines</strong>:&nbsp;SVM is binary classification algorithm. Given a set of points of 2 types in N dimensional place, SVM generates a (N — 1) dimensional hyperlane to separate those points into 2 groups. Say you have some points of 2 types in a paper which are linearly separable. SVM will find a straight line which separates those points into 2 types and situated as far as possible from all those points.</p>
+<p><img alt="" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/1-3MU2_8mbRM2qhNz0tecvUg.png" width="99%"><br>
+</p><center><em>Support Vector Machine</em></center><p></p>
+<p>In terms of scale, some of the biggest problems that have been solved using SVMs (with suitably modified implementations) are display advertising, human splice site recognition, image-based gender detection, large-scale image classification...</p>
+  </div>
+
+
+<div class="page-link"><p>Pages: 1 <a href="http://www.kdnuggets.com/2016/08/10-algorithms-machine-learning-engineers.html/2">2</a></p></div>
+
+  <div class="pagi">
+  <hr class="grey-line">
+
+<div class="pagi-left">
+<a href="http://www.kdnuggets.com/2016/08/approaching-almost-any-machine-learning-problem.html" rel="prev"><img width="8" height="10" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/prv.gif"> <strong>Previous post</strong></a></div>
+<div class="pagi-right">
+<a href="http://www.kdnuggets.com/2016/08/top-machine-learning-projects-julia.html" rel="next"><strong>Next post</strong> <img width="8" height="10" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/nxt.gif"></a></div>
+
+<br><br>
+<div>
+<hr class="grey-line"><br>
+<h2>Top Stories Past 30 Days</h2>
+<table class="latn" align="center" cellpadding="3" cellspacing="10" width="100%">
+  <tbody><tr>
+    <td valign="top" width="50%">
+      <table cellpadding="3" cellspacing="2">
+        <tbody><tr><th><b>Most Popular</b></th></tr>
+        <tr><td>
+          <ol class="three_ol"><li> <a href="http://www.kdnuggets.com/2016/08/10-algorithms-machine-learning-engineers.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-mp-1-10-algos&#39;]);"><b>The 10 Algorithms Machine Learning Engineers Need to Know</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/seven-more-steps-machine-learning-python.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-mp-2-7-more&#39;]);"><b>7 More Steps to Mastering Machine Learning With Python</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/50-companies-leading-ai-revolution-detailed.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-mp-3-50-ai-rev&#39;]);"><b>50 Companies Leading The AI Revolution, Detailed</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/every-intro-data-science-course-ranked.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-mp-4-intro-ds-courses&#39;]);"><b>Every Intro to Data Science Course on the Internet, Ranked</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/02/gartner-2017-mq-data-science-platforms-gainers-losers.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-mp-5-gartner-gainers&#39;]);"><b>Gartner 2017 Magic Quadrant for Data Science Platforms: gainers and losers</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/02/17-data-science-interview-questions-answers.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-mp-6-17-more&#39;]);"><b>17 More Must-Know Data Science Interview Questions and Answers</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/02/python-deep-learning-frameworks-overview.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-mp-7-python-dl-fws&#39;]);"><b>An Overview of Python Deep Learning Frameworks</b></a>
+         </li></ol>
+        </td></tr>
+      </tbody></table>
+    </td>	<td valign="top">
+      <table cellpadding="3" cellspacing="2">
+        <tbody><tr><th><b>Most Shared</b></th></tr>
+        <tr><td><ol class="three_ol">
+<li> <a href="http://www.kdnuggets.com/2017/03/50-companies-leading-ai-revolution-detailed.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-ms-1-50-ai-rev&#39;]);"><b>50 Companies Leading The AI Revolution, Detailed</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/data-science-data-scientist-do.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-ms-2-what-ds-do&#39;]);"><b>What Is Data Science, and What Does a Data Scientist Do?</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/getting-started-deep-learning.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-ms-3-started-dl&#39;]);"><b>Getting Started with Deep Learning</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/dataiku-top-algorithms.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-ms-4-close-algorithms&#39;]);"><b>Getting Up Close and Personal with Algorithms</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/what-makes-good-data-visualization.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-ms-5-good-data-viz&#39;]);"><b>What makes a good data visualization – a Data Scientist perspective</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/17-data-science-interview-questions-answers-part-3.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-ms-6-17-more-3&#39;]);"><b>17 More Must-Know Data Science Interview Questions and Answers, Part 3</b></a>
+</li><li> <a href="http://www.kdnuggets.com/2017/03/7-types-data-scientist-job-profiles.html" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/pbc/2017/04-03-ms-7-7-job-profiles&#39;]);"><b>7 Types of Data Scientist Job Profiles</b></a>
+          </li></ol>
+        </td></tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+  </div>
+  <!--#content end--></div>
+
+<div id="sidebar">
+  <div class="latn">
+      <h3><b><a href="http://www.kdnuggets.com/news/index.html">Latest News</a></b></h3>
+      <ul style="font-size:14px; margin-top:5px">
+<li> <a href="http://www.kdnuggets.com/jobs/17/04-04-university-san-francisco-assistant-professor-analytics-program.html">University of San Francisco: Assistant Profes...</a></li><li> <a href="http://www.kdnuggets.com/2017/04/statisticscom-finding-gems-big-data.html">Finding “Gems” in Big Data</a></li><li> <a href="http://www.kdnuggets.com/2017/04/upcoming-meetings-analytics-big-data-science-machine-learning.html">Upcoming Meetings in Analytics, Big Data, Dat...</a></li><li> <a href="http://www.kdnuggets.com/2017/04/top-reddit-machine-learning-march.html">Top /r/MachineLearning Posts, March: A Super ...</a></li><li> <a href="http://www.kdnuggets.com/2017/04/must-know-fewer-predictors-machine-learning-models.html">Must-Know: Why it may be better to have fewer...</a></li><li> <a href="http://www.kdnuggets.com/2017/04/datascience-introduction-anomaly-detection.html">Introduction to Anomaly Detection</a></li></ul>
+
+              
+  </div>
+  <div>
+    <script type="text/javascript">e17_write(kse_ads);</script>
+  </div>
+  <br><script type="text/javascript" src="http://www.kdnuggets.com/aps/sbm.js"></script>       
+  <div class="latn" style="margin-top: 15px;">
+      <h3><b>More Recent Stories</b></h3>
+      <ul class="next-posts">
+<li> <a href="http://www.kdnuggets.com/2017/04/datascience-introduction-anomaly-detection.html">Introduction to Anomaly Detection</a></li><li> <a href="http://www.kdnuggets.com/2017/04/wharton-successful-applications-customer-analytics-may-philadelphia.html">Wharton: Successful Applications of Customer Analytics, May 10...</a></li><li> <a href="http://www.kdnuggets.com/2017/04/beware-two-data-obfuscation-tactics.html">Beware of Two Data Obfuscation Tactics</a></li><li> <a href="http://www.kdnuggets.com/2017/04/grakn-artificial-intelligence-ingredients-intelligence.html">What is AI? Ingredients for Intelligence</a></li><li> <a href="http://www.kdnuggets.com/2017/04/strata-london-all-things-data.html">Strata London: Learn about all things data. KDnuggets Offer en...</a></li><li> <a href="http://www.kdnuggets.com/2017/04/paw-healthcare-new-york-apply-speak.html">PAW Healthcare – Apply to speak!</a></li><li> <a href="http://www.kdnuggets.com/2017/04/top-news-week-0327-0402.html">Top Stories, Mar 27-Apr 2: Standardization and Specialization ...</a></li><li> <a href="http://www.kdnuggets.com/2017/04/deep-stubborn-networks-gan-refinement.html">Deep Stubborn Networks – A Breakthrough Advance Towards Adve...</a></li><li> <a href="http://www.kdnuggets.com/2017/03/guide-navigating-jupyter-ecosystem.html">A Short Guide to Navigating the Jupyter Ecosystem</a></li><li> <a href="http://www.kdnuggets.com/2017/03/plotcon-data-visualization-oakland-may.html">PLOTCON, Largest Data Visualization Event of its kind, Oakland...</a></li><li> <a href="http://www.kdnuggets.com/2017/03/commbank-join-push-boundaries.html">Join CommBank to push the boundaries of what is, and what coul...</a></li><li> <a href="http://www.kdnuggets.com/2017/03/formulated-events-new-frontier-communication.html">Put Your Best Face Forward: The New Frontier of Communication</a></li><li> <a href="http://www.kdnuggets.com/2017/03/what-makes-great-data-scientist.html">What makes a great data scientist?</a></li><li> <a href="http://www.kdnuggets.com/2017/03/best-r-packages-machine-learning.html"><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/top-kdnuggets-blog-2017-mar-silver.png" width="95" alt="Silver Blog, March 2017" align="right">The Best&nbsp;R Packages for Machine Learning...</a></li><li> <a href="http://www.kdnuggets.com/2017/03/rework-deep-learning-leaders-london-june.html">Join Deep Learning Leaders in London, June 1-2 (KDnuggets Offer)</a></li><li> <a href="http://www.kdnuggets.com/2017/03/top-tweets-mar22-28.html">Top tweets, Mar 22-28: Big #DataScience: Expectation vs. Re...</a></li><li> <a href="http://www.kdnuggets.com/2017/03/tma-april-webinar-predictive-analytics-failure-launch2.html">Webinar: Predictive Analytics,  Failure to Launch – Apr 13</a></li><li> <a href="http://www.kdnuggets.com/2017/03/strata-hadoop-san-jose-key-takeaways-day2.html">Key Takeaways from Strata + Hadoop World 2017 San Jose, Day 2</a></li><li> <a href="http://www.kdnuggets.com/2017/03/beginners-guide-tweet-analytics-pandas.html">A Beginner’s Guide to Tweet Analytics with Pandas</a></li><li> <a href="http://www.kdnuggets.com/2017/03/getting-hot-here-data-science-vs-fake-news.html">It’s Getting Hot In Here: Data Science vs Fake News</a></li></ul>
+
+  </div>       
+</div><div class="breadcrumbs_bottom">
+    <div class="breadcumb">
+       <br>
+<a href="http://www.kdnuggets.com/">KDnuggets Home</a> » <a href="http://www.kdnuggets.com/news/index.html">News</a> » <a href="http://www.kdnuggets.com/2016/index.html">2016</a> » <a href="http://www.kdnuggets.com/2016/08/index.html">Aug</a> » <a href="http://www.kdnuggets.com/2016/08/tutorials.html">Tutorials, Overviews</a> » The 10 Algorithms Machine Learning Engineers Need to Know (&nbsp;<a href="http://www.kdnuggets.com/2016/n31.html">16:n31</a>&nbsp;)    </div>
+</div>
+<!--#content_wrapper end--></div>
+<br>
+  <div id="footer">
+  <br>© 2017 KDnuggets. <a href="http://www.kdnuggets.com/about/index.html">About KDnuggets</a><br>&nbsp;
+<div class="kd_bottom">
+  <div class="footer-container">
+    <div class="footer-news"><a href="http://www.kdnuggets.com/news/subscribe.html" target="_blank" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/bot/sub&#39;]);"><b>Subscribe to KDnuggets News</b></a></div>
+    <div class="footer-sm">
+      <a href="http://twitter.com/kdnuggets" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/bot/twt&#39;]);"><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/tw_c48.png" width="32" height="32"></a> 
+      <a href="http://facebook.com/kdnuggets" target="_blank" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/bot/fb&#39;]);"><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/fb_c48.png" alt="Facebook" width="32" height="32"></a>
+      <a href="http://www.linkedin.com/groups/KDnuggets-Analytics-Data-Mining-54257" target="_blank" onclick="_gaq.push([&#39;_trackPageview&#39;,&#39;/x/bot/in&#39;]);"><img src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/in_c48.png" alt="LinkedIn" width="32" height="32"></a>
+    </div>
+  </div>
+  <div class="close-footer">X</div>
+</div>
+<script type="text/javascript">
+  jQuery('.close-footer').click(
+      function(){       
+         jQuery('.kd_bottom').hide();
+      }
+   );
+</script>  </div>
+  <div class="clear"><!--blank--></div>
+</div>
+<script type="text/javascript" src="./The 10 Algorithms Machine Learning Engineers Need to Know_files/wp-embed.min.js.download"></script>
+<!--/.main_wrapper--></div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=gpsaddthis"></script>
+
+
+
+<!-- Dynamic page generated in 0.467 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-04-04 20:00:28 -->
+
+<!-- Compression = gzip --></body></html>

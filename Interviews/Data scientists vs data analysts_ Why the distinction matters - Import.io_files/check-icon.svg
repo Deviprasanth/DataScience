@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>check-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="W01-Homepage-Copy-14" sketch:type="MSArtboardGroup" transform="translate(-511.000000, -3124.000000)" fill="#009EE2">
+            <path d="M521,3125.66667 C525.595,3125.66667 529.333333,3129.405 529.333333,3134 C529.333333,3138.595 525.595,3142.33333 521,3142.33333 C516.405,3142.33333 512.666667,3138.595 512.666667,3134 C512.666667,3129.405 516.405,3125.66667 521,3125.66667 L521,3125.66667 Z M521,3124 C515.4775,3124 511,3128.4775 511,3134 C511,3139.5225 515.4775,3144 521,3144 C526.5225,3144 531,3139.5225 531,3134 C531,3128.4775 526.5225,3124 521,3124 L521,3124 Z M519.366667,3138.16667 L515.616667,3134.56667 L516.78,3133.37167 L519.346667,3135.81917 L525.196667,3129.83333 L526.3825,3131.00833 L519.366667,3138.16667 L519.366667,3138.16667 Z" id="check-icon" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

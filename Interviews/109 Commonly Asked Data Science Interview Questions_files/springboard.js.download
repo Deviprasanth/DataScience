@@ -1,0 +1,186 @@
+$ = jQuery;
+$(document).ready(function() {
+
+  /* Analytics Section */
+
+  // Heap Analytics
+
+   window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+    heap.load("1686378163");
+  
+  // End Heap Analytics
+
+  /* End Analytics Section */
+
+  $("#owl-related-posts").owlCarousel({
+    items : 2,
+    itemsCustom : false,
+    itemsDesktop : [1199,2],
+    itemsTablet: [991, 2],
+    itemsMobile: [767,1],
+    singleItem : false,
+    itemsScaleUp : false,
+  });
+
+  $.get('/token/',{ "_": $.now() }, function(data) {
+    csrftoken_api=data.token;
+    $('input[name="csrfmiddlewaretoken"]').val(csrftoken_api);
+    var next = window.location.pathname;
+    var login_form_url = "/accounts/login/?next=" + next;
+    $("#loginModal form#user-login-form").attr("action", login_form_url);
+    var signup_form_url = "/accounts/signup/?next=" + next;
+    $("#loginModal form#user-signup-form").attr("action", signup_form_url);
+  })
+
+  jQuery.validator.addMethod("noSpace", function(value, element) {
+      return value.indexOf(" ") < 0 && value !== "";
+    }, "No spaces please");
+
+    (function($, window, document) {
+    // The $ is now locally scoped
+        $.get('/user/',{ "_": $.now() }, function(data) {
+
+            if (data.code == 500) {
+                /*$(document).ready(function(){
+                    $(document).trigger('login-check-completed');
+                });*/
+            } else {
+
+                if(data.firstname.length > 10){
+                    data.firstname = data.firstname.slice(0, 10) + "...";
+                }
+
+                var navbar = $(".navbar.site-header");
+                navbar.find('a[data-toggle="modal"]').parents("li").remove();
+
+                var userData = {
+                    user_name: data.firstname + " " + data.lastname,
+                    pic_url: data.picture,
+                };
+
+                if(data.is_admin && data.is_mentor){
+                    data.is_mentor = false;
+                }
+
+                var source   = $("#template-user-profile-dropdown").html();
+                var template = Handlebars.compile(source);
+
+                var html= template(data);
+
+                navbar.find('.navbar-nav:last-child').append(html);
+
+                var el  = $('<ul class="nav navbar-nav pull-right">' + html + '</ul>');
+                el.find(".dropdown-toggle").append('<i class="fa fa-angle-down"></i>');
+
+                el.insertBefore('.navbar.site-header .navbar-brand');
+
+
+                // setting user pic ( bcs of pic_url error)
+                var picImageTag = $('.sb-user-pic');
+                if (picImageTag.length > 0) {
+                    var usrPic = picImageTag.attr("data-original");
+                    picImageTag.attr("src", usrPic);
+                }
+            }
+        });
+
+        $(".modal-body .user-login-form-ctn").on("click", ".swap-form", function(e) {
+            e.preventDefault();
+
+            var $this = $(this);
+            var formTobeShown = $this.data("show");
+            var formTobeHidden = $this.data("hide");
+            var formCtn = $(e.delegateTarget);
+
+            formCtn.find("." + formTobeShown + "-label").show();
+            formCtn.find("." + formTobeShown).show();
+            formCtn.find("." + formTobeShown + "-link-ctn").hide();
+
+            formCtn.find("." + formTobeHidden + "-label").hide();
+            formCtn.find("." + formTobeHidden).hide();
+            formCtn.find("." + formTobeHidden + "-link-ctn").show();
+        });
+
+        var formValidationConfigObj = {
+            rules: {
+                'password1': {
+                    minlength: 6,
+                    noSpace: true
+                }
+            },
+            errorPlacement: function(error, element) {
+                $(error).insertBefore(element);
+            }
+        };
+
+        // jquery.validation plugin init
+        $("#user-signup-form").validate(formValidationConfigObj);
+        $("#user-login-form").validate(formValidationConfigObj);
+
+        $("a[data-target=scroll-to-workshop]").click(function(event) {
+            /* Act on the event */
+            event.preventDefault();
+            $('html,body').animate({
+                    scrollTop: $(".workshop-hero-ctn").offset().top
+            },800);
+        });
+
+    }(window.jQuery, window, document));
+
+
+    // for closing the sidebar on mobile when login is clicked
+    $('a[data-target="#loginModal"]').on('click', function(event) {
+        event.preventDefault();
+        $("a[data-target=#bs-main-menu-navbar-collapse]").click();
+    });
+
+    // Adding scroll down link via js
+    $('.single-page.bk-fullwidth header').append('<div class="scroll-down text-white"><i class="fa fa-chevron-down"></i></div>')
+    $(".scroll-down i.fa").on("click", function() {
+        $('html,body').animate({
+                scrollTop: $(".article-content").offset().top
+        },800);
+    });
+    $("form.want-to-learn-form").validate({
+        errorPlacement: function(error, element) {
+            $(error).insertBefore(element);
+        },
+        submitHandler: function(form) {
+            var formEl = $(form);
+            _dcq.push(["identify", {
+              email: formEl.find("input[type=email]").val(),
+              tags: [formEl.find(".wk-tag").val(), formEl.find(".location-tag").val()],
+              success: function(whatHappn){
+                $("form.want-to-learn-form").html('<h5 class="w-400 text-white">Welcome to the inner circle. We\'ll keep you posted!</h5>');
+                $("div.collapse-im-intrested-form-ctn").addClass("hidden");
+                $("footer[role=contentinfo]").find(".title-left-sec").html("Thank You!");
+              }
+            }]);
+        }
+    });
+
+    var collaspeImIntersetedEl = $("#collapse-im-intrested-dropdown");
+
+    collaspeImIntersetedEl.on('hide.bs.collapse', function (e) {
+      var target = $(e.target);
+      target.siblings().find("i.fa").addClass('fa-angle-down').removeClass('fa-angle-up');
+
+    });
+
+    collaspeImIntersetedEl.on('show.bs.collapse', function (e) {
+      var target = $(e.target);
+      target.siblings().find("i.fa").addClass('fa-angle-up').removeClass('fa-angle-down');
+    });
+
+    collaspeImIntersetedEl.on('click', 'a.tag-select', function(event) {
+        event.preventDefault();
+        var $this = $(this);
+        $this.parents('.small-screen-collapse-nav').find('.tag-name').text($this.text());
+        $("#collapse-im-intrested-dropdown").collapse('hide');
+        $("form.want-to-learn-form").find("input.wk-tag").attr('value', $this.data("tag"));
+    });
+
+    if ($('.related-box .bk-related-posts').length === 0)
+        $('.related-box').css('display', 'none');
+});
+

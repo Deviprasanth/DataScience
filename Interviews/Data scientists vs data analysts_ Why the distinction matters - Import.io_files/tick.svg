@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16618) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox-13-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="W07b-tour-v2" sketch:type="MSArtboardGroup" transform="translate(-389.000000, -4498.000000)" fill="#FFFFFF">
+            <g id="Group-Copy" sketch:type="MSLayerGroup" transform="translate(0.000000, 4356.000000)">
+                <path d="M399,142 C393.477135,142 389,146.477189 389,152 C389,157.522811 393.477135,162 399,162 C404.522811,162 409,157.522811 409,152 C409,146.477189 404.522811,142 399,142 L399,142 Z M397.319568,156.663135 L393.13573,152.478108 L394.917135,150.696378 L397.319459,153.099297 L402.86573,147.553081 L404.648,149.334108 L397.319568,156.663135 L397.319568,156.663135 Z" id="checkbox-13-icon" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

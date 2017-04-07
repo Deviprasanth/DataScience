@@ -1,0 +1,27 @@
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+/* Boxes */
+
+	.box.class {
+		
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 5em 0 3em 0;
+	}
+
+	.feature:after {
+		right: -5em;
+	}
+
+/* Header */
+
+	#header h1 {
+		top: .25em;
+	}
